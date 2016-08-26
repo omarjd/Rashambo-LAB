@@ -1,7 +1,7 @@
 
 public enum Roshambo {
-ROCK,
 PAPER,
+ROCK,
 SCISSORS;
 	
 	public String compare(Roshambo x){
@@ -9,10 +9,14 @@ SCISSORS;
 		return "Draw!"; 
 		
 		switch(this){
-		case ROCK: return x==Roshambo.PAPER ? 		"Lose"	:"Win!"; 
-		case PAPER: return x==Roshambo.SCISSORS ? 	"Lose"	:"Win!";
-		case SCISSORS: return x==Roshambo.ROCK ? 	"Lose"	:"Win!"; 
-		default: return null; 
+		case ROCK: 
+			return x==Roshambo.PAPER ? 		"Lose"	:	"Win!"; 
+		case PAPER: 
+			return x==Roshambo.SCISSORS ? 	"Lose"	:	"Win!";
+		case SCISSORS: 
+			return x==Roshambo.ROCK ? 		"Lose"	:	"Win!"; 
+		default: 
+			return null; 
 		}
 		
 	}
